@@ -21,7 +21,7 @@ Grid of nodes
     Open Site
     Full Open Site
 
-  initialize grid of blocked sites
+  --initialize grid of blocked sites
   open site i
   check if site is full site
   check if site is open site
@@ -42,6 +42,11 @@ function createGrid(n) {
   }
 }
 
+function openSite(site) {
+  site.state = 'open';
+}
+
 createGrid(10);
+openSite(grid[99]);
 console.log(grid);
 console.log(grid.length);
